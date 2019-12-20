@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day Planner</title>
+    <script
+      src="https://kit.fontawesome.com/5a03e2c1bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Day Planner</title>
-	<script src="https://kit.fontawesome.com/5a03e2c1bd.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="styles/style.css">
-</head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="display-3">Work Day Schedule</h1>
+      <h2 class="bg-light" id="date">Today</h2>
+      <hr class="my-1" />
+    </div>
+    <div>
+      <table class="table table-borderless table-hover w-100">
+        <tbody>
+          <tr>
+            <th scope="row" class=" text-right">9AM</th>
+            <td class="w-75 bg-success">
+              <input
+                type="text"
+                name="am9"
+                id="am9"
+                class="w-100 bg-success border-0 "
+              />
+            </td>
+            <td
+              class="lock text-left bg-primary rounded-right"
+              data-lock="open"
+            >
+              <i class="fas fa-lock-open" id="lock-9"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-<body>
-	<div class="jumbotron text-center">
-		<h1 class="display-3">Work Day Schedule</h1>
-		<h2 class="bg-light" id="date">Today</h2>
-		<hr class="my-1">
-	</div>
-	<div>
-		<table class="table table-borderless table-hover w-100">
-			<tbody>
-				<tr>
-					<th scope="row" class=" text-right">9AM</th>
-					<td class="w-75 bg-success"><input type="text" name="am9" id="am9" class="w-100 bg-success border-0 "></td>
-					<td class="lock text-left bg-primary rounded-right" data-lock="open"><i class="fas fa-lock-open"
-							id="lock-9"></i></td>
-				</tr>
-			</tbody>
-			<div class="container">
-				<h3 class="row">
-					<h3 class=" col-1">
-						<h3></h3>
-					</h3>
-				</h3>
-			</div>
-		</table>
-
-
-		<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
-	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-		crossorigin="anonymous"></script>
-	<script src="scripts/script.js"></script>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
