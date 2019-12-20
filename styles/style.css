@@ -1,17 +1,18 @@
-input{
-	width: 100%;
-	height: 100%;
+textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
-input:focus{
-	border: 0px;
+input:focus {
+  border: 0px;
 }
-tr{
-	border-top: 1px;
-	border-bottom: 1px;
-	border-left: 0px;
-	border-right: 0px;
-	border-style: dashed;
+tr {
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: dashed;
 }
-.w-90{
-	width: 90%;
+.w-90 {
+  width: 90%;
 }
