@@ -49,8 +49,6 @@ $(".lock").on("click", function() {
     $(id).attr("disabled", "disabled");
     schedule.scheduleTask[index] = text;
   }
-  console.log(schedule);
+
   localStorage.setItem("schedule", JSON.stringify(schedule));
-  schedule = JSON.parse(localStorage.getItem("schedule"));
-  console.log(schedule);
 });
