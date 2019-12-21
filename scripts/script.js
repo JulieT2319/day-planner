@@ -57,4 +57,4 @@ $(".lock").on("click", function () {
   localStorage.setItem("schedule", JSON.stringify(schedule));
 });
 
-setInterval(setDate, 1000);
+setInterval(setDate, 60000);
