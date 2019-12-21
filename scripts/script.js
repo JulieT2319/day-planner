@@ -19,7 +19,7 @@ if (schedule === null) {
 }
 
 function setDate() {
-  $("#date").text(moment().format('dddd, MMMM Do YYYY :ss'));
+  $("#date").text(moment().format('dddd, MMMM Do YYYY'));
 }
 setDate();
 for (i = 0; i < schedule.timeSlot.length; i++) {
