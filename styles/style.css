@@ -1,4 +1,4 @@
-table{
+table {
   max-width: 1200px;
 }
 
@@ -7,9 +7,11 @@ textarea {
   height: 100%;
   border: none;
 }
+
 input:focus {
   border: 0px;
 }
+
 tr {
   border-top: 1px;
   border-bottom: 1px;
@@ -17,6 +19,15 @@ tr {
   border-right: 0px;
   border-style: dashed;
 }
+
 .w-90 {
   width: 90%;
+}
+
+.bg-gray {
+  background-color: rgb(134, 144, 155);
+}
+
+:disabled {
+  color: rgba(24, 1, 1, 0.918);
 }

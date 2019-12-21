@@ -66,8 +66,8 @@ function setBackground() {
       $(id).attr("class", "bg-danger");
       $(id2).attr("class", "bg-danger");
     } else if (hourNow > i + 9) {
-      $(id).attr("class", "bg-secondary");
-      $(id2).attr("class", "bg-secondary");
+      $(id).attr("class", "bg-gray");
+      $(id2).attr("class", "bg-gray");
     } else {
       $(id).attr("class", "bg-success");
       $(id2).attr("class", "bg-success");
