@@ -1,206 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Day Planner</title>
-    <script
-      src="https://kit.fontawesome.com/5a03e2c1bd.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
 
-  <body>
-    <div class="jumbotron text-center">
-      <h1 class="display-3">Work Day Schedule</h1>
-      <h2 class="bg-light" id="date">Today</h2>
-      <hr class="my-1" />
-    </div>
-    <div>
-      <table class="table table-borderless table-hover w-100">
-        <tbody>
-          <tr>
-            <th scope="row" class=" text-right">9AM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="am9"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="0"
-              id="lock-0"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">10AM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="am10"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="1"
-              id="lock-1"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">11AM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="am11"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="2"
-              id="lock-2"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">12PM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="pm12"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="3"
-              id="lock-3"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">1PM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="pm1"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="4"
-              id="lock-4"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">2PM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="pm2"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="5"
-              id="lock-5"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">3PM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="pm3"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="6"
-              id="lock-6"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">4PM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="pm4"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-left bg-primary rounded-right"
-              data-lock="open"
-              data-index="7"
-              id="lock-7"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row" class=" text-right">5PM</th>
-            <td class="w-75 bg-success">
-              <textarea
-                class=" bg-success w-100 bg-success border-0"
-                id="pm5"
-              ></textarea>
-            </td>
-            <td
-              class="lock text-center bg-primary rounded-right"
-              data-lock="open"
-              data-index="8"
-              id="lock-8"
-            >
-              <i class="fas fa-lock-open"></i>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Day Planner</title>
+  <script src="https://kit.fontawesome.com/5a03e2c1bd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/script.js"></script>
-  </body>
+<body>
+  <div class="jumbotron text-center">
+    <h1 class="display-3">Work Day Schedule</h1>
+    <h2 class="bg-light" id="date">Today</h2>
+    <hr class="my-0" />
+  </div>
+  <div>
+    <table class="table table-borderless table-hover text-center p-0 m-5 mt-1">
+      <tbody>
+        <tr>
+          <th scope="row" class=" text-right">9AM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="am9"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="0" id="lock-0">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">10AM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="am10"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="1" id="lock-1">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">11AM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="am11"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="2" id="lock-2">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">12PM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="pm12"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="3" id="lock-3">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">1PM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="pm1"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="4" id="lock-4">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">2PM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="pm2"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="5" id="lock-5">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">3PM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="pm3"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="6" id="lock-6">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">4PM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="pm4"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="7" id="lock-7">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class=" text-right">5PM</th>
+          <td class="w-75 bg-success">
+            <textarea class=" bg-success w-100 bg-success border-0" id="pm5"></textarea>
+          </td>
+          <td class="lock text-center bg-primary rounded-right" data-lock="open" data-index="8" id="lock-8">
+            <i class="fas fa-unlock"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>
