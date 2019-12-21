@@ -13,11 +13,18 @@ if (schedule === null) {
       "open",
       "open"
     ],
-    scheduleTask: [, "stealth mode", , , , , , , ,],
+    scheduleTask: [, "stealth mode", , , , , , , , ],
     timeSlot: ["am9", "am10", "am11", "pm12", "pm1", "pm2", "pm3", "pm4", "pm5"]
   };
 }
 console.log(schedule);
+
+function setDate() {
+  $("#date").text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
+}
+
+setDate()
+console.log(moment());
 for (i = 0; i < schedule.timeSlot.length; i++) {
   var id = "#" + schedule.timeSlot[i];
   var id2 = "#lock-" + i;
@@ -30,7 +37,7 @@ for (i = 0; i < schedule.timeSlot.length; i++) {
     $(id2).html("<i class='fas fa-lock    '></i>");
   }
 }
-$(".lock").on("click", function() {
+$(".lock").on("click", function () {
   var lock = $(this).attr("data-lock");
   var index = $(this).attr("data-index");
   var id = "#" + schedule.timeSlot[index];
@@ -52,3 +59,5 @@ $(".lock").on("click", function() {
 
   localStorage.setItem("schedule", JSON.stringify(schedule));
 });
+
+setInterval(setDate, 1000);
