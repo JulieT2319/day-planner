@@ -77,3 +77,4 @@ function setBackground() {
 
 setBackground();
 setInterval(setDate(), 60000);
+setInterval(setBackground(), 1000)
