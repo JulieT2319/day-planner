@@ -3,17 +3,17 @@ console.log(schedule);
 if (schedule === null) {
   schedule = {
     lockState: [
-      "open",
-      "locked",
-      "open",
-      "open",
-      "open",
-      "open",
-      "open",
-      "open",
-      "open"
+      "unlocked",
+      "unlocked",
+      "unlocked",
+      "unlocked",
+      "unlocked",
+      "unlocked",
+      "unlocked",
+      "unlocked",
+      "unlocked"
     ],
-    scheduleTask: [, "stealth mode", , , , , , , , ],
+    scheduleTask: [, , , , , , , , , ],
     timeSlot: ["am9", "am10", "am11", "pm12", "pm1", "pm2", "pm3", "pm4", "pm5"]
   };
 }
