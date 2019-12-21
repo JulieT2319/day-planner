@@ -2,14 +2,15 @@
 
  ![Screen shot of schedule](images/schedule-screen-shot.jpg)
 
- ## What it is
+## What it is
 
- This is a schedule for your typical 9-5 workday.
+This is a schedule for your typical 9-5 workday.
 
- ## Where it is
+## Where it is
+
  The live deployment of this daily schedule is located here <https://juliet2319.github.io/day-planner/>
 
- ## How to use it
+## How to use it
 
  In any time block, enter the tasks that you have scheduled. Click the lock in that time block to lock that time slot and save it to your local storage.
 
