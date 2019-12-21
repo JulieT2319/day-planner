@@ -19,7 +19,7 @@ if (schedule === null) {
 }
 
 function setDate() {
-  $("#date").text(moment().format('dddd, MMMM Do YYYY'));
+  $("#date").text(moment().format('dddd, MMMM Do YYYY :ss'));
 }
 setDate();
 for (i = 0; i < schedule.timeSlot.length; i++) {
@@ -76,5 +76,5 @@ function setBackground() {
 }
 
 setBackground();
-setInterval(setDate(), 60000);
-setInterval(setBackground(), 1000)
+setInterval(setDate, 60000);
+setInterval(setBackground, 1000);
