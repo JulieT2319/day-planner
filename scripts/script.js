@@ -17,14 +17,11 @@ if (schedule === null) {
     timeSlot: ["am9", "am10", "am11", "pm12", "pm1", "pm2", "pm3", "pm4", "pm5"]
   };
 }
-console.log(schedule);
 
 function setDate() {
-  $("#date").text(moment().format('dddd, MMMM Do YYYY, h:mm a'));
+  $("#date").text(moment().format('dddd, MMMM Do YYYY'));
 }
-
-setDate()
-console.log(moment());
+setDate();
 for (i = 0; i < schedule.timeSlot.length; i++) {
   var id = "#" + schedule.timeSlot[i];
   var id2 = "#lock-" + i;
