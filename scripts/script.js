@@ -57,4 +57,23 @@ $(".lock").on("click", function () {
   localStorage.setItem("schedule", JSON.stringify(schedule));
 });
 
-setInterval(setDate, 60000);
+function setBackground() {
+  var hourNow = parseInt(moment().format('HH'));
+  for (i = 0; i < schedule.timeSlot.length; i++) {
+    var id = "#" + schedule.timeSlot[i];
+    var id2 = "#input-" + i;
+    if (hourNow === i + 9) {
+      $(id).attr("class", "bg-danger");
+      $(id2).attr("class", "bg-danger");
+    } else if (hourNow > i + 9) {
+      $(id).attr("class", "bg-secondary");
+      $(id2).attr("class", "bg-secondary");
+    } else {
+      $(id).attr("class", "bg-success");
+      $(id2).attr("class", "bg-success");
+    }
+  }
+}
+
+setBackground();
+setInterval(setDate(), 60000);
